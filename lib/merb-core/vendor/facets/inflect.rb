@@ -281,11 +281,9 @@ module English
     word 'cow'       , 'kine'
     word 'datum'     , 'data'
     word 'basis'     , 'bases'
-    
+    word 'diagnosis' , 'diagnoses'    
     
     # One-way singularization exception (convert plural to singular).
-
-    singular_word 'cactus', 'cacti'
 
     # General rules.
     rule 'person' , 'people', true
@@ -312,7 +310,9 @@ module English
     rule 'ffe'  , 'ffes'
     rule 'afe'  , 'aves'
     rule 'ouse' , 'ouses'
-    rule 'osis' , 'oses'
+    # more cases of words ending in -oses not being singularized properly
+    # than cases of words ending in -osis
+#    rule 'osis' , 'oses'
     rule 'ox'   , 'oxes'
     rule 'us'   , 'uses'
     rule ''     , 's'
