@@ -36,7 +36,6 @@ module English
         plural = singular unless plural
         singular_word(singular, plural)
         plural_word(singular, plural)
-        rule(singular, plural)
       end
 
       def clear(type = :all)
@@ -235,7 +234,6 @@ module English
     word 'moose'
     word 'hovercraft'
     word 'grass'
-    word 'news'
     word 'rain'
     word 'milk'
     word 'rice'
@@ -253,8 +251,6 @@ module English
     word 'axis'      , 'axes'
     word 'crisis'    , 'crises'
     word 'testis'    , 'testes'
-    word 'child'     , 'children'
-    word 'person'    , 'people'
     word 'potato'    , 'potatoes'
     word 'tomato'    , 'tomatoes'
     word 'buffalo'   , 'buffaloes'
@@ -289,7 +285,9 @@ module English
     rule 'person' , 'people', true
     rule 'shoe'   , 'shoes', true
     rule 'hive'   , 'hives', true
-    rule 'man'    , 'men', true    
+    rule 'man'    , 'men', true
+    rule 'child'  , 'children', true
+    rule 'news'   , 'news', true
     rule 'rf'   , 'rves'
     rule 'af'   , 'aves'
     rule 'ero'  , 'eroes'
